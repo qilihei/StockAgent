@@ -167,13 +167,6 @@ class DataSyncNode(BaseNode):
                     f"Collector {collector.name} completed: "
                     f"{result['count']} records, {result['duration_ms']:.2f}ms"
                 )
-                
-                # 记录同步状态
-                await mongo_manager.record_sync(
-                    sync_type=collector.name,
-                    sync_date=today,
-                    count=result["count"],
-                )
             else:
                 self.logger.error(
                     f"Collector {collector.name} failed: {result.get('error')}"
