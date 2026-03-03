@@ -462,3 +462,5 @@ docker compose up -d mongodb redis web data-sync backtest
 <div align="center">
   <p>如果这个项目对你有帮助，请给一个 ⭐ Star 支持一下！</p>
 </div>
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/qilihei/StockAgent)
